@@ -1,0 +1,109 @@
+0*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://www.shellyduffer.com/wp-content/uploads/2011/10/sky-clouds-3wax.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+.highway{
+    height: 120px;
+    width: 500%;
+    display: block;
+    background-image: url(rodar123.jpg);
+    position: absolute;
+    right: 0;
+    bottom:0;
+    left: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation-name: highway;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes highway {
+    100%{
+        transform: translateX(-3400px);
+    }
+}
+.city{
+    height:500px;
+    width: 500%;
+    background-image: url(https://cdn.pixabay.com/photo/2016/01/02/01/17/city-1117433_1280.png);
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation-name: city;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes city {
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+.car{
+    width: 400px;
+    left: 37.5%;
+    bottom: 55px;
+    transform: translateX(-50);
+    position: absolute;
+    z-index:2 ;
+}
+.car img{
+width: 100%;
+animation-name: car;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+@keyframes car {
+    100%{
+        transform: translateY(-1px);
+    }
+     50%{
+        transform: translateY(2px);
+    }
+     0%{
+        transform: translateY(-1px);
+    }
+}
+.tyer{
+    left: 50%;
+    bottom: 150px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+.tyer img{
+    width: 90px;
+    height: 90px;
+    animation-name: tyer;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.back-wheel{
+    left: -165px;
+    position: absolute;
+}
+.front-wheel{
+    left: 80px;
+    position: absolute;
+}
+@keyframes tyer {
+    100%{
+        transform: rotate(360deg);
+    }
+}
